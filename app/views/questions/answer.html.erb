@@ -1,0 +1,18 @@
+<h1>Stupid Coaching</h1>
+<div id="container">
+  <h2><%=@answer %></h2>
+  <h2>-You</h2>
+</div>
+
+<div id="container" >
+  <h2>
+    <%if @answer == "I am going to work"%>
+      <%='Great!'%>
+    <%elsif @answer.chars.last == "?"%>
+      <%='Silly question, get dressed and go to work!'%>
+    <% else %>
+      <%= "I don't care, get dressed and go to work!" %>
+    <%end%>
+  </h2>
+  <h2>-Your Coach</h2>
+</div>
